@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Montserrat:wght@100..900&family=Pacifico&display=swap');
+
+.main_container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    gap: 5px;
+    background-color: rgb(116, 172, 195);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid rgb(25, 102, 225);
+}
+
+.result_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px; 
+}
+
+.numbers_and_actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; 
+}
+
+button{
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#text_input {
+    height: 30px;
+    background-color: rgb(102, 124, 136);
+    box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    color: rgb(243, 231, 231);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+
+.clear {
+    background-color: rgb(212, 135, 162);
+    color: white;
+    box-shadow: 0px 3px 0px rgba(147, 26, 125, 0.5);
+}
+
+.number, .action {
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.equals {
+    background-color: rgb(225, 225, 96);
+    box-shadow: 0px 3px 0px rgba(201, 201, 59, 0.5);
+}
+
+.action {
+    background-color: rgb(241, 205, 240);
+}
